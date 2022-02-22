@@ -1,7 +1,7 @@
 # R study
 #### This repository is for studying R programming, based on the youtube channel [Kee-Young Kwahk](https://www.youtube.com/watch?v=sL_Kc379r_4&list=PLY0OaF78qqGA42e0rXqBWCcF_C9Ib-T1x).
 ***
-## vector
+## Vector (Lecture 7)
 [Youtube Link](https://www.youtube.com/watch?v=2xnhuPgM7sM&list=PLY0OaF78qqGA42e0rXqBWCcF_C9Ib-T1x&index=7)
 * how to create a vector: in a form of c()
 ```R
@@ -34,4 +34,20 @@ rep(c(1,2,3), each=3)
 rep(c(1,2,3), times=c(1,2,3))
 rep(c(1,2,3), length.out=8)
 ```
-~ 13:28
+* when combining numeric vector and character vector, the elements in the numeric vector is converted into a character vector
+
+* str(): see the structure of the vector
+* comma is used to represent the dimension of the vector
+
+* length(): print the magnitude of the vector
+
+* indexing: specifies element in the vector using brackets 
+```R
+vec2 = c(1,2,3)
+vec2[1]
+```
+
+* built-in vectors: LETTERS, letters, month.name, month.abb, pi
+
+
+
