@@ -49,5 +49,23 @@ vec2[1]
 
 * built-in vectors: LETTERS, letters, month.name, month.abb, pi
 
+***
 
-
+## Vector Calculation (Lecture 8)
+[Youtube Link](https://www.youtube.com/watch?v=VhctpYMyVrM&t=800s)
+* Unlike other programming languages, R uses a vector calculation to calculate.
+* in 1+2, 1 and 2 is a vector and + is a function
+* vector calculation is performed in an element unit.
+```R
+c(1, 2, 3) + c(4, 5, 6)
+```
+* If two vectors are not in the same length, recycling rule applies.
+* recycling rule: In a vector calculation of different length of vectors, R reuse the element of the shorter vector
+```R
+c(1, 2, 3) + c(4, 5, 6, 7, 8, 9)
+```
+* Warning message when the length of the longer vector is not a multiple of a shorter vector
+```R
+c(1, 2, 3) + c(4, 5, 6, 7, 8)
+```
+~ 13:20
