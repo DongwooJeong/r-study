@@ -25,3 +25,27 @@ c(1, 3, 5) + 10
 # the length of the longer vector is not a multiple of a shorter vector
 c(1, 2, 3) + c(4, 5, 6, 7, 8)
 
+# logical operator
+# ==, !=, <, >, <=, >=, !x, x|y, x&y, isTRUE()
+
+v = pi
+w = 10/3
+v == w
+v != w
+v > w
+v < w
+!(v > w)
+(v == w) | (v < w)
+(v == w) & (v < w)
+isTRUE(v==w)
+
+# logical operation with vector calculation
+y = c(0, 25, 50, 75, 100)
+z = c(50, 50, 50, 50, 50)
+y == z
+y != z
+y > z
+y < z
+
+y == 50
+y > 50

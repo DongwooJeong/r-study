@@ -68,4 +68,17 @@ c(1, 2, 3) + c(4, 5, 6, 7, 8, 9)
 ```R
 c(1, 2, 3) + c(4, 5, 6, 7, 8)
 ```
-~ 13:20
+* logical operation
+    + ==, !=, <, >, <=, >=, !x, x|y, x&y, isTRUE()
+* logical operation using vector calculation
+```R
+x <- c(1,2,3,4,5)
+y <- c(3,3,3,3,3)
+x > y
+```
+* same as comparing with scalar
+```R
+x <- c(1,2,3,4,5)
+x > 3
+```
+~ 22:32
