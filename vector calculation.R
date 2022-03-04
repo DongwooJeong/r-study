@@ -49,3 +49,33 @@ y < z
 
 y == 50
 y > 50
+
+# logical operator as a number
+as.numeric(TRUE)
+as.numeric(FALSE)
+
+TRUE*TRUE
+TRUE*FALSE
+TRUE+TRUE
+
+# logical operator and some functions 
+y = c(0, 25, 50, 75, 100)
+sum(y>50)
+
+any(-3:3 > 0)
+all(-3:3 > 0)
+
+# floating point number
+sqrt(2)^2 == 2
+sqrt(2)^2 - 2
+identical(sqrt(2)^2,2)
+
+all.equal(sqrt(2)^2,2)
+all.equal(sqrt(2)^2,3)
+isTRUE(all.equal(sqrt(2)^2,3))
+
+# character vector
+fruit = c("apple", "banana", "strawberry")
+food = c("pie", "juice", "cake")
+paste(fruit, food)
+paste(fruit, "juice")

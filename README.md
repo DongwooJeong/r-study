@@ -81,4 +81,38 @@ x > y
 x <- c(1,2,3,4,5)
 x > 3
 ```
-~ 22:32
+* logical operator as a number
+    + TRUE: 1
+    + FALSE: 0
+    ```R
+    as.numeric(TRUE)
+    TRUE*TRUE
+    ```
+* functions using logical vectors
+    + sum(): number of the elements that satisfy the condition
+    + any(): print TRUE if any element satisfies the condition
+    + all(): print TRUE if all elements satisfy the condition
+    ```R
+    y = c(0, 25, 50, 75, 100)
+    sum(y>50)
+    any(-3:3 > 0)
+    all(-3:3 > 0)
+    ```
+* unique characteristic of ==
+    + floating point number: In some cases, the approximation of the real number is expressed using rounding, so even two equations representing the same number are expressed as not the same
+    + use all.equal() to ignore a slight difference
+    ```R
+    sqrt(2)^2 == 2
+    identical(sqrt(2)^2,2)
+    all.equal(sqrt(2)^2,2)
+    ```
+* vector calculation with character vectors
+    + paste(): combine two character vectors like numeric vectors
+        - recycling rule also applies
+    ```R
+    fruit = c("apple", "banana", "strawberry")
+    food = c("pie", "juice", "cake")
+    paste(fruit, food)
+    paste(fruit, "juice")
+    ```
+***
