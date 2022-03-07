@@ -116,3 +116,55 @@ x > 3
     paste(fruit, "juice")
     ```
 ***
+## Vector function (Lecture 9)
+[Youtube Link](https://www.youtube.com/watch?v=rjBtHG-AeG8&list=PLY0OaF78qqGA42e0rXqBWCcF_C9Ib-T1x&index=9)
+* R functions also use vectorized way to perform calculation
+* absolute value
+```R
+abs(-3:3)
+```
+* logarithm
+```R
+log(1:5)
+log(1:5, base=exp(1))
+
+log2(1:5)
+log10(1:5)
+```
+* factorial and combination
+```R
+factorial(1:5)
+choose(5, 2)
+```
+* square root
+```R
+sqrt(1:5)
+```
+* significant value, default number is 7
+```R
+options("digits")
+signif(456.789, digits=2)
+signif(456.789, digits=3)
+signif(456.789, digits=4)
+```
+* rounding
+```R
+round(456.789, digits=2)
+
+round(456.789)
+round(sqrt(1:5),digits=2)
+round(456.789, digits=-2)
+
+round(11.5)
+round(-5.5)
+
+floor(456.78)
+floor(-456.78)
+
+ceiling(456.78) 
+ceiling(-456.78)
+
+trunc(456.78)
+trunc(-456.78)
+```
+~ 14:50
